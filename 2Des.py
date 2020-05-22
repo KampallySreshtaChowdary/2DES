@@ -39,8 +39,8 @@ def generateCipher(plaintext, keyOne, keyTwo, effKeyLength1, effKeyLength2):
     if(len(keyTwo) != 16):
         print "padding gone wrong..."
     #Initate the key for single DES encryption
-    if(ciphertext == binascii.hexlify(twodes(plaintext,keyOne,keyTwo)))
-        print ciphertext
+    ciphertext == binascii.hexlify(twodes(plaintext,keyOne,keyTwo));
+    print ciphertext
 
 def main():
     generateCipher(plaintext, keyOne, keyTwo, effKeyLength1, effKeyLength2)
